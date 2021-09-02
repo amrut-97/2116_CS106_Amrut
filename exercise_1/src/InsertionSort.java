@@ -3,18 +3,19 @@ public class InsertionSort {
     public static void insertionSort(int arr[]) {  
     	
         for (int j = 1; j < arr.length; j++) {  
-            int key = arr[j];  
+            int temp = arr[j];  
             int i = j - 1;
             
-            while ( (i > -1) && ( arr [i] > key ) ) {  
+            while ( (i > -1) && ( arr [i] > temp ) ) {  
                 arr [i+1] = arr [i];  
                 i--;  
-            }  
-            arr[i+1] = key;
+            } 
+            arr[i+1] = temp;
         }  
     }  
        
-    public static void main(String a[]) {    
+    public static void main(String a[]) {  
+    	
         int[] arr = {102,33,76,0,12,-1,53};    
         
         System.out.println("Array Before Insertion Sort");    
