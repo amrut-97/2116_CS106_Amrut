@@ -1,30 +1,33 @@
-public class InsertionSort {  
-    public static void insertionSort(int array[]) {  
-        int n = array.length;  
-        for (int j = 1; j < n; j++) {  
-            int key = array[j];  
-            int i = j-1;  
-            while ( (i > -1) && ( array [i] > key ) ) {  
-                array [i+1] = array [i];  
+public class InsertionSort {
+	
+    public static void insertionSort(int arr[]) {  
+    	
+        for (int j = 1; j < arr.length; j++) {  
+            int key = arr[j];  
+            int i = j - 1;
+            
+            while ( (i > -1) && ( arr [i] > key ) ) {  
+                arr [i+1] = arr [i];  
                 i--;  
             }  
-            array[i+1] = key;  
+            arr[i+1] = key;
         }  
     }  
        
-    public static void main(String a[]){    
-        int[] arr1 = {9,14,3,2,43,11,58,22};    
-        System.out.println("Before Insertion Sort");    
-        for(int i:arr1){    
-            System.out.print(i+" ");    
-        }    
+    public static void main(String a[]) {    
+        int[] arr = {102,33,76,0,12,-1,53};    
+        
+        System.out.println("Array Before Insertion Sort");    
+        for(int i = 0; i < arr.length; i++) {  
+    		System.out.print("[" + arr[i] + "] ");  
+    	}    
         System.out.println();    
             
-        insertionSort(arr1);//sorting array using insertion sort    
+        insertionSort(arr);    
            
-        System.out.println("After Insertion Sort");    
-        for(int i:arr1){    
-            System.out.print(i+" ");    
-        }    
+        System.out.println("\nArray After Insertion Sort");    
+        for(int i = 0; i < arr.length; i++) {  
+    		System.out.print("[" + arr[i] + "] ");  
+    	}  
     }    
 }    
