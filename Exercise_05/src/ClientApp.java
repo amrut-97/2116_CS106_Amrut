@@ -4,9 +4,11 @@ public class ClientApp {
 	public static void main(String[] args) {
 		StudentBatch batch = new StudentBatch();
 		
-		Course[] list1 = {new Course("cs101", "Data Structures and Algo", 10, 100.0),
-						new Course("cs102", "Object Oriented Concepts", 10, 100.0), 
-						new Course("cs103", "Operating Systems", 10, 100.0)};
+		Course[] list1 = {
+			new Course("cs101", "Data Structures and Algo", 10, 100.0),
+			new Course("cs102", "Object Oriented Concepts", 10, 100.0), 
+			new Course("cs103", "Operating Systems", 10, 100.0)
+		};
 		Course[] list2 = {new Course(), new Course(), new Course()}; 
 		Course[] list3 = {new Course(), new Course(), new Course()}; 
 		
