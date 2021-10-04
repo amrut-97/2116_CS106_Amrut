@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Ball
+comment1.params=player\ myWorld
+comment1.target=Ball(Player,\ greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ moveAround()
+comment4.params=
+comment4.target=void\ bounce()
+comment5.params=
+comment5.target=void\ bounceOffEdge()
+comment6.params=
+comment6.target=void\ hitBrick()
+comment7.params=
+comment7.target=void\ DisplayIsLose()
+comment8.params=bricksCount
+comment8.target=void\ getBricksCount(java.lang.Integer)
+comment9.params=
+comment9.target=void\ DisplayIsWin()
+numComments=10
